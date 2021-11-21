@@ -13,8 +13,8 @@ moongose.connect('mongodb://localhost/crud-mongo')
 const indexRoutes = require('./routes/index');
 
 app.set('port', process.env.PORT || 4000);
-//app.set('views', path.join(__dirname + '\views'));
-app.set('views', './views');
+
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 
